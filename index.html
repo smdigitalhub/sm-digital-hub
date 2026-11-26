@@ -1,105 +1,154 @@
+
 <!DOCTYPE html>
 <html lang="mr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SM Digital Hub | Katewadi</title>
-<meta name="description" content="SM Digital Hub Katewadi - Digital Services, PAN, Recharge, Banking, Government Services and KBD Star Live.">
+<meta name="description" content="SM Digital Hub Katewadi - Digital, Banking, PAN, Recharge and Online Services.">
+<title>SM Digital Hub | Digital India, Digital You</title>
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
 body{
-  font-family:Arial,sans-serif;
-  background:#f4f7fb;
-  color:#1d2735;
-  line-height:1.6;
+ font-family:Arial,Helvetica,sans-serif;
+ background:#f5f7fb;color:#17233a;
+ line-height:1.6
 }
+:root{
+ --navy:#07152d;--blue:#1465e8;--gold:#ffc83d;
+ --white:#fff;--muted:#66758b
+}
+.container{width:min(1100px,92%);margin:auto}
 header{
-  background:linear-gradient(135deg,#071b3a,#0878d1);
-  color:white;
-  text-align:center;
-  padding:35px 15px;
+ background:rgba(7,21,45,.96);color:white;
+ position:sticky;top:0;z-index:99;
+ border-bottom:1px solid rgba(255,255,255,.1)
 }
-header h1{font-size:32px}
-header p{margin-top:8px}
-nav{
-  background:#071b3a;
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:18px;
-  padding:14px;
+.nav{
+ display:flex;justify-content:space-between;
+ align-items:center;padding:14px 0;gap:15px
 }
-nav a{
-  color:white;
-  text-decoration:none;
-  font-weight:bold;
+.brand{font-size:22px;font-weight:900}
+.brand span{color:var(--gold)}
+.navlinks{display:flex;gap:18px;flex-wrap:wrap}
+.navlinks a{color:white;text-decoration:none;font-size:14px}
+.hero{
+ background:radial-gradient(circle at top right,#1e60c5,#07152d 65%);
+ color:white;padding:70px 0 60px;overflow:hidden
 }
-section{
-  padding:35px 18px;
-  max-width:1000px;
-  margin:auto;
+.hero-grid{
+ display:grid;grid-template-columns:1.2fr .8fr;
+ gap:35px;align-items:center
 }
-h2{
-  text-align:center;
-  margin-bottom:25px;
-  color:#0759a5;
+.tag{
+ display:inline-block;background:rgba(255,200,61,.14);
+ color:var(--gold);padding:7px 14px;border-radius:30px;
+ font-size:13px;border:1px solid rgba(255,200,61,.4)
 }
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:18px;
-}
-.card{
-  background:white;
-  padding:22px;
-  border-radius:15px;
-  box-shadow:0 3px 12px rgba(0,0,0,.08);
-  text-align:center;
-}
-.card h3{margin-bottom:10px}
-.project{
-  max-width:500px;
-  margin:auto;
-  padding:25px;
-  background:white;
-  border-radius:18px;
-  box-shadow:0 3px 15px rgba(0,0,0,.1);
-  text-align:center;
-}
-.project img{
-  width:100%;
-  max-width:280px;
-  height:auto;
-  object-fit:contain;
-  margin:10px auto 18px;
-}
-.social{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:10px;
-  margin-top:20px;
-}
+.hero h1{font-size:clamp(36px,6vw,60px);line-height:1.1;margin:20px 0}
+.hero h1 span{color:var(--gold)}
+.hero p{color:#d8e5ff;max-width:650px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
 .btn{
-  display:inline-block;
-  padding:12px 18px;
-  border-radius:10px;
-  text-decoration:none;
-  color:white;
-  font-weight:bold;
+ display:inline-block;padding:13px 20px;border-radius:12px;
+ text-decoration:none;font-weight:bold;transition:.2s
 }
-.youtube{background:#e62117}
-.instagram{background:#c13584}
-.facebook{background:#1877f2}
-.website{background:#0759a5}
-.whatsapp{background:#128c48}
+.btn:hover{transform:translateY(-2px)}
+.primary{background:var(--gold);color:#101b2e}
+.secondary{border:1px solid white;color:white}
+.hero-box{
+ background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);
+ border-radius:25px;padding:30px;text-align:center;
+ backdrop-filter:blur(10px)
+}
+.hero-logo{
+ width:120px;height:120px;margin:auto auto 15px;
+ border-radius:30px;background:white;color:#0752b5;
+ display:flex;align-items:center;justify-content:center;
+ font-size:38px;font-weight:900;box-shadow:0 15px 40px #0003
+}
+.hero-box h2{font-size:25px}
+.hero-box p{font-size:14px;margin-top:8px}
+section{padding:65px 0}
+.section-title{text-align:center;margin-bottom:35px}
+.section-title h2{font-size:32px;color:var(--navy)}
+.section-title p{color:var(--muted);margin-top:8px}
+.services{
+ display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+ gap:18px
+}
+.service{
+ background:white;border:1px solid #e8edf5;border-radius:18px;
+ padding:24px;box-shadow:0 8px 25px rgba(20,40,80,.05);
+ transition:.25s
+}
+.service:hover{transform:translateY(-5px);box-shadow:0 12px 30px #1232a018}
+.icon{font-size:32px;margin-bottom:12px}
+.service h3{color:#10284c;margin-bottom:8px}
+.service p{color:var(--muted);font-size:14px}
+.about{
+ background:white;border-radius:24px;padding:30px;
+ box-shadow:0 8px 25px rgba(20,40,80,.05)
+}
+.about p{margin-bottom:12px;color:#4b5c74}
+.project-section{
+ background:linear-gradient(135deg,#07152d,#103d83);
+ color:white
+}
+.project-section .section-title h2{color:white}
+.project-section .section-title p{color:#d5e4ff}
+.project{
+ max-width:800px;margin:auto;background:rgba(255,255,255,.06);
+ border:1px solid rgba(255,255,255,.15);
+ border-radius:25px;padding:30px;text-align:center
+}
+.project-logo{
+ width:150px;height:150px;object-fit:contain;
+ background:white;border-radius:22px;padding:10px;margin-bottom:15px
+}
+.project h3{font-size:34px;color:var(--gold)}
+.project p{color:#dce8ff}
+.social{
+ display:flex;justify-content:center;gap:12px;flex-wrap:wrap;
+ margin-top:22px
+}
+.social a{
+ padding:12px 18px;border-radius:12px;
+ text-decoration:none;color:white;font-weight:bold
+}
+.yt{background:#e62117}
+.ig{background:#c13584}
+.fb{background:#1877f2}
+.web{background:#1675e9}
+.contact-grid{
+ display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+ gap:18px
+}
+.contact-card{
+ background:white;padding:25px;border-radius:18px;
+ border:1px solid #e8edf5;text-align:center
+}
+.contact-card h3{margin-bottom:8px}
+.contact-card p{color:var(--muted)}
 footer{
-  background:#071b3a;
-  color:white;
-  text-align:center;
-  padding:25px 15px;
-  margin-top:30px;
+ background:#07152d;color:white;text-align:center;padding:30px 15px
+}
+footer p{color:#c6d6ef;font-size:14px;margin-top:6px}
+.floating{
+ position:fixed;bottom:20px;right:18px;z-index:100;
+ background:#16a34a;color:white;text-decoration:none;
+ border-radius:50px;padding:14px 18px;font-weight:bold;
+ box-shadow:0 5px 20px #0003
+}
+@media(max-width:750px){
+ .hero-grid{grid-template-columns:1fr}
+ .nav{align-items:flex-start;flex-direction:column}
+ .navlinks{gap:12px}
+ .hero{padding:45px 0}
+ section{padding:45px 0}
+ .section-title h2{font-size:27px}
+ .project{padding:22px 15px}
 }
 </style>
 </head>
@@ -107,155 +156,191 @@ footer{
 <body>
 
 <header>
-  <h1>SM Digital Hub</h1>
-  <p>Digital Services • Online Services • Technology</p>
-  <p>Katewadi, Tal. Mohol, Dist. Solapur, Maharashtra</p>
+ <div class="container nav">
+  <div class="brand">SM <span>Digital Hub</span></div>
+  <nav class="navlinks">
+   <a href="#home">Home</a>
+   <a href="#services">Services</a>
+   <a href="#about">About</a>
+   <a href="#project">Project</a>
+   <a href="#contact">Contact</a>
+  </nav>
+ </div>
 </header>
 
-<nav>
-  <a href="#home">Home</a>
-  <a href="#services">Services</a>
-  <a href="#about">About</a>
-  <a href="#projects">Projects</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<section id="home">
-  <div class="card">
-    <h2>Welcome to SM Digital Hub</h2>
-    <p>
-      तुमच्या सर्व डिजिटल सेवा एकाच ठिकाणी.
-      Online सेवा, Banking, Recharge आणि सरकारी सेवा
-      विश्वासाने आणि सोप्या पद्धतीने.
-    </p>
+<section class="hero" id="home">
+ <div class="container hero-grid">
+  <div>
+   <span class="tag">✦ DIGITAL INDIA • DIGITAL YOU</span>
+   <h1>Your Digital Services<br><span>One Destination.</span></h1>
+   <p>
+    PAN, Banking, Recharge, Government Services आणि
+    विविध डिजिटल सुविधा — तुमच्या जवळ, विश्वासाने.
+   </p>
+   <div class="actions">
+    <a class="btn primary" href="#services">Explore Services ↗</a>
+    <a class="btn secondary" href="https://wa.me/918530737516">WhatsApp Us</a>
+   </div>
   </div>
+
+  <div class="hero-box">
+   <div class="hero-logo">SM</div>
+   <h2>SM Digital Hub</h2>
+   <p>Digital India... Digital You...</p>
+   <p>📍 Katewadi • Mohol • Solapur</p>
+  </div>
+ </div>
 </section>
 
 <section id="services">
-  <h2>Our Services</h2>
-
-  <div class="grid">
-
-    <div class="card">
-      <h3>PAN Services</h3>
-      <p>New PAN Card, Correction आणि इतर PAN सेवा.</p>
-    </div>
-
-    <div class="card">
-      <h3>Banking Services</h3>
-      <p>Money Transfer, Deposit, Withdrawal आणि Digital Banking.</p>
-    </div>
-
-    <div class="card">
-      <h3>Recharge & Bill Pay</h3>
-      <p>Mobile Recharge, Electricity Bill आणि Online Payments.</p>
-    </div>
-
-    <div class="card">
-      <h3>Government Services</h3>
-      <p>Online सरकारी अर्ज, प्रमाणपत्रे आणि विविध सेवा.</p>
-    </div>
-
-    <div class="card">
-      <h3>Farmer Services</h3>
-      <p>Farmer ID, कृषी योजना आणि शेतकरी डिजिटल सेवा.</p>
-    </div>
-
-    <div class="card">
-      <h3>Other Services</h3>
-      <p>Voter Services, Online Forms, Insurance आणि इतर सेवा.</p>
-    </div>
-
+ <div class="container">
+  <div class="section-title">
+   <h2>Our Digital Services</h2>
+   <p>डिजिटल सुविधा — एकाच ठिकाणी</p>
   </div>
+
+  <div class="services">
+   <div class="service">
+    <div class="icon">🪪</div>
+    <h3>PAN Services</h3>
+    <p>New PAN Card, Correction आणि इतर PAN संबंधित सेवा.</p>
+   </div>
+
+   <div class="service">
+    <div class="icon">🏦</div>
+    <h3>Banking Services</h3>
+    <p>Money Transfer, Deposit, Withdrawal व डिजिटल बँकिंग सुविधा.</p>
+   </div>
+
+   <div class="service">
+    <div class="icon">📱</div>
+    <h3>Recharge & Bill Pay</h3>
+    <p>Mobile Recharge, Electricity Bill आणि विविध पेमेंट सेवा.</p>
+   </div>
+
+   <div class="service">
+    <div class="icon">🏛️</div>
+    <h3>Government Services</h3>
+    <p>Online अर्ज, Voter Services आणि सरकारी ऑनलाइन सुविधा.</p>
+   </div>
+
+   <div class="service">
+    <div class="icon">🌾</div>
+    <h3>Farmer Services</h3>
+    <p>Farmer ID, कृषी योजना व शेतकरी संबंधित सेवा.</p>
+   </div>
+
+   <div class="service">
+    <div class="icon">📄</div>
+    <h3>Online Forms</h3>
+    <p>ऑनलाइन फॉर्म, अर्ज आणि इतर डिजिटल सुविधा.</p>
+   </div>
+
+   <div class="service">
+    <div class="icon">🛡️</div>
+    <h3>Insurance</h3>
+    <p>विविध विमा संबंधित सेवा व माहिती.</p>
+   </div>
+
+   <div class="service">
+    <div class="icon">💳</div>
+    <h3>Digital Payments</h3>
+    <p>डिजिटल पेमेंट आणि विविध ऑनलाइन व्यवहार सुविधा.</p>
+   </div>
+  </div>
+ </div>
 </section>
 
 <section id="about">
-  <h2>About SM Digital Hub</h2>
-  <div class="card">
-    <p>
-      SM Digital Hub हे कातेवाडी, ता. मोहोळ, जि. सोलापूर
-      येथे ग्राहकांना विविध Digital व Online सेवा
-      उपलब्ध करून देण्यासाठी कार्यरत आहे.
-    </p>
-    <p>
-      आमचा उद्देश ग्रामीण भागात डिजिटल सेवा,
-      तंत्रज्ञान आणि ऑनलाइन सुविधांचा प्रसार करणे आहे.
-    </p>
+ <div class="container">
+  <div class="section-title">
+   <h2>About Us</h2>
+   <p>तंत्रज्ञान • सेवा • विश्वास</p>
   </div>
+  <div class="about">
+   <p>
+    <strong>SM Digital Hub</strong> हे कातेवाडी, ता. मोहोळ,
+    जि. सोलापूर येथे विविध डिजिटल आणि ऑनलाइन सेवा
+    ग्राहकांपर्यंत पोहोचवण्याच्या उद्देशाने कार्यरत आहे.
+   </p>
+   <p>
+    ग्रामीण भागात डिजिटल सुविधा अधिक सोप्या आणि सहज
+    उपलब्ध व्हाव्यात, हा आमचा प्रयत्न आहे.
+   </p>
+   <p>
+    <strong>Digital India... Digital You...</strong>
+   </p>
+  </div>
+ </div>
 </section>
 
-<section id="projects">
-  <h2>Our Project</h2>
+<section class="project-section" id="project">
+ <div class="container">
+  <div class="section-title">
+   <h2>Featured Project</h2>
+   <p>आमचा कबड्डी क्षेत्रातील डिजिटल उपक्रम</p>
+  </div>
 
   <div class="project">
+   <img class="project-logo"
+        src="kbd-live-logo.jpg"
+        alt="KBD Star Live Logo">
 
-    <img src="kbd-live-logo.jpg"
-         alt="KBD Star Live Logo">
+   <h3>KBD STAR LIVE</h3>
+   <p><strong>Kabaddi Media • LIVE • Highlights • Interviews</strong></p>
+   <p style="margin-top:12px">
+    कबड्डी स्पर्धा, Live Streaming, Highlights, Player Interviews
+    आणि कबड्डी विश्वातील अपडेट्स.
+   </p>
 
-    <h3>KBD STAR LIVE</h3>
-
-    <p>
-      Kabaddi Media • LIVE • Highlights • Interviews
-    </p>
-
-    <p>
-      कबड्डी स्पर्धा, Live Streaming, सामन्यांचे Highlights,
-      खेळाडूंची माहिती आणि कबड्डी विश्वातील अपडेट्स.
-    </p>
-
-    <div class="social">
-
-      <a class="btn youtube"
-         href="https://youtube.com/@kbdlive-kbdstars?si=ICmLCrb6yNJzyjOL"
-         target="_blank">
-         YouTube
-      </a>
-
-      <a class="btn instagram"
-         href="https://www.instagram.com/kbdstarslive?gwpx=MTloOG81ZXB2bGU3bg=="
-         target="_blank">
-         Instagram
-      </a>
-
-      <a class="btn facebook"
-         href="FACEBOOK_LINK_HERE"
-         target="_blank">
-         Facebook
-      </a>
-
-      <a class="btn website"
-         href="https://kbdstars.com/"
-         target="_blank">
-         KBDStars Website
-      </a>
-
-    </div>
-
+   <div class="social">
+    <a class="yt" href="https://youtube.com/@kbdlive-kbdstars?si=ICmLCrb6yNJzyjOL" target="_blank">▶ YouTube</a>
+    <a class="ig" href="https://www.instagram.com/kbdstarslive?gwpx=MTloOG81ZXB2bGU3bg==" target="_blank">◎ Instagram</a>
+    <a class="fb" href="FACEBOOK_LINK_HERE" target="_blank">f Facebook</a>
+    <a class="web" href="https://kbdstars.com/" target="_blank">🌐 Website</a>
+   </div>
   </div>
+ </div>
 </section>
 
 <section id="contact">
-  <h2>Contact Us</h2>
-
-  <div class="card">
-    <p><b>SM Digital Hub</b></p>
-    <p>Katewadi, Tal. Mohol, Dist. Solapur, Maharashtra</p>
-    <p>Mobile: +91 8530737516</p>
-
-    <div class="social">
-      <a class="btn whatsapp"
-         href="https://wa.me/918530737516"
-         target="_blank">
-         WhatsApp
-      </a>
-    </div>
+ <div class="container">
+  <div class="section-title">
+   <h2>Contact Us</h2>
+   <p>आमच्याशी संपर्क साधा</p>
   </div>
+
+  <div class="contact-grid">
+   <div class="contact-card">
+    <div class="icon">📍</div>
+    <h3>Our Location</h3>
+    <p>Katewadi, Tal. Mohol,<br>Dist. Solapur, Maharashtra</p>
+   </div>
+
+   <div class="contact-card">
+    <div class="icon">📞</div>
+    <h3>Call / WhatsApp</h3>
+    <p>+91 8530737516</p>
+    <a class="btn primary" href="https://wa.me/918530737516">Chat on WhatsApp</a>
+   </div>
+
+   <div class="contact-card">
+    <div class="icon">🌐</div>
+    <h3>Online</h3>
+    <p>Digital Services & Online Solutions</p>
+   </div>
+  </div>
+ </div>
 </section>
 
 <footer>
-  <p>© 2026 SM Digital Hub</p>
-  <p>Designed for Digital India</p>
+ <h3>SM Digital Hub</h3>
+ <p>Digital India... Digital You...</p>
+ <p>Katewadi • Tal. Mohol • Dist. Solapur</p>
+ <p>© 2026 SM Digital Hub. All Rights Reserved.</p>
 </footer>
+
+<a class="floating" href="https://wa.me/918530737516">✆ WhatsApp</a>
 
 </body>
 </html>
