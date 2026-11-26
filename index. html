@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SM Digital Hub</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f4f7fb;color:#172033}
+header{background:linear-gradient(135deg,#071a35,#0875cf);color:white;padding:35px 20px;text-align:center}
+header h1{font-size:32px;margin:0}
+header p{margin:10px 0}
+nav{background:#102745;padding:12px;text-align:center}
+nav a{color:white;text-decoration:none;margin:8px;display:inline-block}
+.hero{padding:35px 20px;text-align:center;background:white}
+.hero h2{color:#0866bd}
+.container{padding:20px;max-width:900px;margin:auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}
+.card{background:white;padding:20px;border-radius:14px;box-shadow:0 3px 12px #0001}
+.card h3{color:#0766bd}
+.btn{display:inline-block;background:#0875cf;color:white;padding:12px 18px;border-radius:9px;text-decoration:none;margin-top:10px}
+footer{background:#102745;color:white;text-align:center;padding:25px;margin-top:30px}
+</style>
+</head>
+<body>
+
+<header>
+<h1>SM Digital Hub</h1>
+<p>Digital Services • Technology • Innovation</p>
+<p>कातेवाडी, ता. मोहोळ, जि. सोलापूर</p>
+</header>
+
+<nav>
+<a href="#services">सेवा</a>
+<a href="#about">आमच्याबद्दल</a>
+<a href="#projects">Projects</a>
+<a href="#contact">संपर्क</a>
+</nav>
+
+<section class="hero">
+<h2>आपले डिजिटल सेवा केंद्र</h2>
+<p>सर्व डिजिटल सेवा एकाच ठिकाणी!</p>
+<p>विश्वास • सेवा • तंत्रज्ञान</p>
+<a class="btn" href="https://wa.me/918530737516">WhatsApp संपर्क</a>
+</section>
+
+<section class="container" id="services">
+<h2>आमच्या सेवा</h2>
+<div class="grid">
+<div class="card">
+<h3>🪪 PAN सेवा</h3>
+<p>नवीन PAN कार्ड व दुरुस्ती मार्गदर्शन.</p>
+</div>
+<div class="card">
+<h3>📝 ऑनलाइन सेवा</h3>
+<p>ऑनलाइन फॉर्म, शासकीय योजनांसाठी अर्ज सहाय्य.</p>
+</div>
+<div class="card">
+<h3>🧑‍🌾 Farmer ID</h3>
+<p>शेतकरी ओळख व संबंधित डिजिटल सेवा.</p>
+</div>
+<div class="card">
+<h3>💳 Banking & Payments</h3>
+<p>AEPS, पैसे पाठवणे, बँकिंग सेवा व पेमेंट सहाय्य.</p>
+</div>
+<div class="card">
+<h3>📱 Recharge & Bills</h3>
+<p>मोबाईल रिचार्ज व बिल भरणा सेवा.</p>
+</div>
+<div class="card">
+<h3>🗳️ Voter Services</h3>
+<p>मतदार नोंदणी व मतदार सेवा मार्गदर्शन.</p>
+</div>
+</div>
+</section>
+
+<section class="container" id="about">
+<div class="card">
+<h2>SM Digital Hub बद्दल</h2>
+<p>SM Digital Hub हे डिजिटल सेवा, ऑनलाइन सुविधा, तंत्रज्ञान आणि डिजिटल व्यवसायासाठी समर्पित केंद्र आहे.</p>
+<p>आमचा उद्देश ग्रामीण भागात डिजिटल सुविधा आणि तंत्रज्ञान अधिक सहज उपलब्ध करून देणे आहे.</p>
+</div>
+</section>
+
+<section class="container" id="projects">
+<h2>आमचे Projects</h2>
+<div class="grid">
+<div class="card">
+<h3>⭐ SM Smart Loyalty</h3>
+<p>स्थानिक व्यवसायांसाठी डिजिटल Loyalty आणि Reward प्रणाली.</p>
+</div>
+<div class="card">
+<h3>🏆 KBD Star Live</h3>
+<p>कबड्डी, क्रीडा प्रसारण, Highlights व क्रीडा मीडिया.</p>
+</div>
+<div class="card">
+<h3>💻 Innovation Lab</h3>
+<p>डिजिटल शिक्षण, संगणक प्रशिक्षण व टेक्नॉलॉजी प्रकल्प.</p>
+</div>
+</div>
+</section>
+
+<section class="container" id="contact">
+<div class="card">
+<h2>संपर्क</h2>
+<p>📍 कातेवाडी, ता. मोहोळ, जि. सोलापूर, महाराष्ट्र</p>
+<p>📞 8530737516</p>
+<a class="btn" href="https://wa.me/918530737516">WhatsApp वर संपर्क करा</a>
+</div>
+</section>
+
+<footer>
+<p>SM Digital Hub</p>
+<p>Digital Services • Innovation • Technology</p>
+<p>© 2026 SM Digital Hub</p>
+</footer>
+
+</body>
+</html>
